@@ -2,4 +2,9 @@
 
 @theme {
   --font-avenir: Avenir, Helvetica, Arial, system-ui, sans-serif;
+  --font-inconsolata: "Inconsolata", monospace;
+  --font-italiana: "Italiana", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-waterbrush: "Water Brush", cursive;
 }
