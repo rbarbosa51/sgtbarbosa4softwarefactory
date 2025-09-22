@@ -1,3 +1,4 @@
+import { Button } from "./components/ui/button"
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
       <h1 className="text-5xl font-montserrat ">Hello World</h1>
       <h1 className="text-5xl font-roboto ">Hello World</h1>
       <h1 className="text-5xl font-waterbrush ">Hello World</h1>
+      <Button>Test</Button>
     </div>
   )
 }
