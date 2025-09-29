@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Hub, Projects, CellPage, OS, Book, Life} from "@/pages";
+import { Home, Hub, Projects, CellPage, OS, Book,} from "@/pages";
 import { Suspense } from "react";
 
 
@@ -24,7 +24,7 @@ function App() {
         <Route path="cell" element={<CellPage />} />
         <Route path="os" element={<OS />} />
         <Route path="book" element={<Book />} />
-        <Route path="life" element={<Life />} />
+        {/* <Route path="life" element={<Life />} /> */}
       </Routes>
     </BrowserRouter>
   )
