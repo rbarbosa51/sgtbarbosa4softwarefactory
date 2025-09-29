@@ -72,7 +72,7 @@ export default function Room(props) {
             receiveShadow
             geometry={nodes.Cell_2.geometry}
             material={materials.Black}
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/cell")}
           onPointerOver={() => setHover(true)}
           onPointerOut={() => setHover(false)}
           />
@@ -84,7 +84,7 @@ export default function Room(props) {
           receiveShadow
           geometry={nodes.Portrait.geometry}
           material={materials.portrait}
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/projects")}
           onPointerOver={() => setHover(true)}
           onPointerOut={() => setHover(false)}
         />

@@ -16,7 +16,7 @@ export default function CellPage(){
           <div className="absolute inset-0">
             <div className="relative h-full w-full [&>div]:absolute [&>div]:inset-0 [&>div]:bg-[radial-gradient(circle_at_center,#FF7112,transparent)] [&>div]:opacity-30 [&>div]:mix-blend-multiply">
             <div></div>
-            <TextFallButton className={'site-button top-4 left-4 relative'} onClick={() => navigate('/')}>Back</TextFallButton>
+            <TextFallButton className={'site-button top-4 left-4 relative'} onClick={() => navigate('/hub')}>Back</TextFallButton>
           </div>
           </div>
           
