@@ -1,18 +1,32 @@
-import { Button } from "./components/ui/button"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home, Hub, Projects, CellPage, OS, Book, Life} from "@/pages";
+import { Suspense } from "react";
+
 
 function App() {
   
 
   return (
-    <div className="h-dvh bg-purple-200 flex flex-col items-center">
-      <h1 className="text-5xl font-avenir ">Hello World</h1>
-      <h1 className="text-5xl font-inconsolata ">Hello World</h1>
-      <h1 className="text-5xl font-italiana ">Hello World</h1>
-      <h1 className="text-5xl font-montserrat ">Hello World</h1>
-      <h1 className="text-5xl font-roboto ">Hello World</h1>
-      <h1 className="text-5xl font-waterbrush ">Hello World</h1>
-      <Button>Test</Button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="" index element={<Home />} />
+
+        <Route
+          path="hub"
+          element={
+            <Suspense fallback={null}>
+              <Hub />
+            </Suspense>
+          }
+        />
+
+        <Route path="projects" element={<Projects />} />
+        <Route path="cell" element={<CellPage />} />
+        <Route path="os" element={<OS />} />
+        <Route path="book" element={<Book />} />
+        <Route path="life" element={<Life />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
