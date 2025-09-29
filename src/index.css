@@ -119,7 +119,7 @@
   color: transparent;
 }
 .site-button {
-  @apply bg-blue-400 text-white px-4 py-1 rounded-md;
+  @apply bg-blue-400 text-white px-4 py-1 rounded-md cursor-pointer;
 }
 .neonText {
   color: #fff;
@@ -183,6 +183,17 @@
     width: 100%;
     height: 100%;
 }
+
+.bg-pause {
+    background-image: url('/images/volume-x.svg');
+}
+.bg-volume {
+    background-image: url('/images/volume.svg');
+}
+.bg-share {
+    background-image: url('/images/share4.svg');
+}
+
 
 /* glitchColors = ['#2b4539', '#61dca3', '#61b3dc'], */
 @layer base {

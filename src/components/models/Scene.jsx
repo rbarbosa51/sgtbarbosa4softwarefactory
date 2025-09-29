@@ -1,50 +1,13 @@
 import { useRef, useEffect } from "react";
 import { useAtom } from "jotai";
-
 import {storeCameraState, cameraPosition} from '@/store'
 import { CameraControls} from "@react-three/drei";
-// import {useControls, button} from 'leva'
-
 import {Lights,Room, Rafael} from "@/components/models"
 
 export default function Scene() {
   const [cameraState, setCameraState] = useAtom(storeCameraState);
   const cameraControls = useRef();
 
-  // useControls('helper', {
-  //     getLootAt: button(() => {
-  //       const position = cameraControls.current.getPosition()
-  //       const target = cameraControls.current.getTarget()
-  //       console.log([...position, ...target])
-  //     }),
-  //     toJSON: button(() => {
-  //       const json = cameraControls.current.toJSON()
-  //       console.log(json)
-  //     })
-  //   })
-  // useControls('Navigate', {
-  //   start: button(() => {
-  //       cameraControls.current.setLookAt(...cameraPosition.start, true)
-  //   }),
-  //   intro: button(() => {
-  //       cameraControls.current.setLookAt(...cameraPosition.cell, true)
-  //   }),
-  //   skill: button(() => {
-  //       cameraControls.current.setLookAt(...cameraPosition.skill, true)
-  //   }),
-  //   book: button(() => {
-  //       cameraControls.current.setLookAt(...cameraPosition.book, true)
-  //   }),
-  //   os: button(() => {
-  //       cameraControls.current.setLookAt(...cameraPosition.os, true)
-  //   }),
-  //   next: button(() => {
-  //       //const length = Object.keys(cameraPosition).length
-  //       setCameraState(prev => (
-  //           prev === (Object.keys(cameraPosition).length - 1) ? 0 : prev + 1
-  //       ))
-  //   })
-  // })
   useEffect(() => {
     switch (cameraState) {
       case 0:

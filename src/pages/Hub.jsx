@@ -5,6 +5,7 @@ import { motion } from "motion/react"
 import { useAtom } from "jotai";
 import { storeCameraState, cameraPosition } from "../store";
 import {Loader} from '@react-three/drei'
+import { TextFallButton } from "@/components/text-fall-button";
 
 export default function Hub() {
   const audioRef = useRef(new Audio("/music/armysong.mp3"));
@@ -52,7 +53,7 @@ export default function Hub() {
           Please view in landscape mode
         </p>
       </div>
-      <button
+      {/* <button
         className="absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer rounded-2xl border-black bg-white bg-opacity-90 px-4 py-2 text-center hover:bg-slate-300"
         onClick={() => {
           setCameraState((prev) =>
@@ -61,7 +62,14 @@ export default function Hub() {
         }}
       >
         Next
-      </button>
+      </button> */}
+      <TextFallButton className={"site-button absolute text-4xl bottom-4 left-1/2 -translate-x-1/2 cursor-pointer"} onClick={() => {
+          setCameraState((prev) =>
+            prev === Object.keys(cameraPosition).length - 1 ? 0 : prev + 1,
+          );
+        }}>
+          Next
+        </TextFallButton>
       {/* Navbar */}
       <motion.nav
         className="absolute bottom-0 left-0 top-0 flex w-80 flex-col items-center border-r border-black/50 bg-white bg-opacity-90"
