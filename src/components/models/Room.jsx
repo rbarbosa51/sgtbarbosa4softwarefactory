@@ -153,7 +153,16 @@ export default function Room(props) {
           material={materials['Material.001']}
           position={[2.386, 1.961, -2.223]}
           scale={2.099}
-          onClick={() => navigate("/")}
+          onClick={e => {
+            e.stopPropagation();
+            window.open('https://drive.google.com/file/d/19Spm7JkAt2ReJDG3wJdiKIavdNU1xM6N/view?usp=sharing', '_blank')
+          }}
+          // onClick={((e) => {
+          //   e.stopPropagation();
+          //   window.open(
+          //     "https://drive.google.com/file/d/19Spm7JkAt2ReJDG3wJdiKIavdNU1xM6N/view?usp=sharing",
+          //     "_blank",
+          //   )}}
           onPointerOver={() => setHover(true)}
           onPointerOut={() => setHover(false)}
         />
