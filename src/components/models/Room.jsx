@@ -38,7 +38,7 @@ export default function Room(props) {
             receiveShadow
             geometry={nodes.laptop_1.geometry}
             material={materials['Material.011']}
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/os")}
             onPointerOver={() => setHover(true)}
             onPointerOut={() => setHover(false)}
           />
@@ -157,12 +157,6 @@ export default function Room(props) {
             e.stopPropagation();
             window.open('https://drive.google.com/file/d/19Spm7JkAt2ReJDG3wJdiKIavdNU1xM6N/view?usp=sharing', '_blank')
           }}
-          // onClick={((e) => {
-          //   e.stopPropagation();
-          //   window.open(
-          //     "https://drive.google.com/file/d/19Spm7JkAt2ReJDG3wJdiKIavdNU1xM6N/view?usp=sharing",
-          //     "_blank",
-          //   )}}
           onPointerOver={() => setHover(true)}
           onPointerOut={() => setHover(false)}
         />
