@@ -5,4 +5,5 @@ export {default as CellPage} from './CellPage'
 export {default as OS} from './OS'
 export {default as Book} from './Books'
 export {default as Life} from './Life'
+export {default as ArmyCards} from './ArmyCards'
 

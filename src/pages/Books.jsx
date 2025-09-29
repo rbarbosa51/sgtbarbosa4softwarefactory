@@ -16,7 +16,7 @@ export default function Book(){
               />
             </div>
             <div className="absolute top-4 left-4">
-              <TextFallButton className={"site-button"} onClick={() => navigate("/")}>
+              <TextFallButton className={"site-button"} onClick={() => navigate("/hub")}>
                 Back
               </TextFallButton>
             </div>

@@ -98,7 +98,7 @@ export default function Room(props) {
           position={[1.494, 2.36, -2.15]}
           rotation={[0, -0.519, 0]}
           scale={0.334}
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/book")}
           onPointerOver={() => setHover(true)}
           onPointerOut={() => setHover(false)}
         />
@@ -129,7 +129,7 @@ export default function Room(props) {
           receiveShadow
           geometry={nodes.cards.geometry}
           material={materials.FLOR}
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/armycards")}
           onPointerOver={() => setHover(true)}
           onPointerOut={() => setHover(false)}
         />
