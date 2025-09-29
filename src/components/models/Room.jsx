@@ -140,7 +140,7 @@ export default function Room(props) {
           receiveShadow
           geometry={nodes.arcade.geometry}
           material={materials['Arcade_machine.001']}
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/doom")}
           onPointerOver={() => setHover(true)}
           onPointerOut={() => setHover(false)}
         />

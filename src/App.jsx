@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Hub, Projects, CellPage, OS, Book,ArmyCards} from "@/pages";
+import { Home, Hub, Projects, CellPage, OS, Book,ArmyCards, Doom} from "@/pages";
 import { Suspense } from "react";
 
 
@@ -26,6 +26,7 @@ function App() {
         <Route path="book" element={<Book />} />
         {/* <Route path="life" element={<Life />} /> */}
         <Route path="armycards" element={<ArmyCards />} />
+        <Route path="doom" element={<Doom />} />
       </Routes>
     </BrowserRouter>
   )
