@@ -169,7 +169,7 @@ export default function Room(props) {
           visibleEdgeColor={"#ffffff"}
           edgeStrength={5}
           pulseSpeed={0.6}
-          width={400}
+          // width={400}
         />
       </EffectComposer>
     </>

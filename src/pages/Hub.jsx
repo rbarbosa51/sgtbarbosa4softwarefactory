@@ -9,7 +9,6 @@ import { TextFallButton } from "@/components/text-fall-button";
 
 export default function Hub() {
   const audioRef = useRef(new Audio("/music/armysong.mp3"));
-  const dialogRef = useRef();
   const [menuOpen, setMenuOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [_, setCameraState] = useAtom(storeCameraState);
